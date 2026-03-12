@@ -1,0 +1,65 @@
+# Mermaid
+
+> Mermaid is a JavaScript-based diagramming and charting tool that generates diagrams from Markdown-inspired text definitions. It renders text into SVG diagrams dynamically in the browser or via CLI.
+
+Mermaid lets developers and non-developers alike create, edit, and share diagrams using a simple text-based syntax. It integrates natively into Markdown documents on GitHub, GitLab, and many other platforms.
+
+## Supported Diagram Types
+
+- **Flowchart** – Directed graphs with nodes and edges; supports subgraphs, styling, and multiple layout directions (TB, LR, RL, BT).
+- **Sequence Diagram** – Models interactions between participants over time using message arrows, loops, alternatives, and notes.
+- **Class Diagram** – UML class diagrams with classes, attributes, methods, and relationships (inheritance, composition, aggregation).
+- **State Diagram** – Finite state machines with states, transitions, forks, joins, and nested states.
+- **Entity Relationship Diagram** – ER diagrams showing entities and their relationships (one-to-one, one-to-many, many-to-many).
+- **User Journey** – Maps the steps a user takes to complete a task and scores the experience at each step.
+- **Gantt Chart** – Project timelines with tasks, durations, milestones, and section groupings.
+- **Pie Chart** – Simple pie charts with labeled slices and optional title.
+- **Quadrant Chart** – 2D quadrant plots for categorizing items along two axes.
+- **Requirement Diagram** – Documents requirements, their types, risks, and relationships to design elements.
+- **Gitgraph (Git Flow)** – Visualizes Git branch and commit history with checkout, commit, merge, and cherry-pick operations.
+- **C4 Diagram** – Architecture diagrams at the system context, container, component, and code levels.
+- **Mindmap** – Hierarchical radial mind maps from indented text.
+- **Timeline** – Chronological timelines with dated events grouped into sections.
+- **Sankey Diagram** – Flow diagrams showing the magnitude of flows between nodes.
+- **XY Chart** – Bar and line charts plotted on numeric X/Y axes.
+- **Block Diagram** – Flexible block-based diagrams with composite blocks and edges.
+- **Packet Diagram** – Network protocol packet layouts with bit-level field definitions.
+- **Architecture Diagram** – System architecture overviews with services, groups, and connections.
+
+## Key Features
+
+- Text-to-diagram rendering using a Markdown-like DSL
+- SVG output rendered directly in the browser
+- Supports theming (default, dark, forest, neutral, base) and custom CSS
+- Live online editor at [mermaid.live](https://mermaid.live)
+- CLI tool (`@mermaid-js/mermaid-cli`) for server-side PNG/SVG/PDF generation
+- Security: sandboxed iframe rendering mode for untrusted input
+- Widely integrated into GitHub, GitLab, Notion, Confluence, VS Code, and many other tools
+
+## Integration
+
+Mermaid diagrams are written inside fenced code blocks tagged with `mermaid`:
+
+````markdown
+```mermaid
+flowchart LR
+    A[Start] --> B{Decision}
+    B -- Yes --> C[Action]
+    B -- No --> D[End]
+```
+````
+
+## Documentation
+
+- [Getting Started](https://mermaid.js.org/intro/getting-started.html)
+- [Syntax Reference](https://mermaid.js.org/intro/syntax-reference.html)
+- [Configuration](https://mermaid.js.org/config/configuration.html)
+- [API Reference](https://mermaid.js.org/config/setup/README.html)
+- [Community Integrations](https://mermaid.js.org/ecosystem/integrations-community.html)
+
+## Resources
+
+- Source code: [https://github.com/mermaid-js/mermaid](https://github.com/mermaid-js/mermaid)
+- NPM: [https://www.npmjs.com/package/mermaid](https://www.npmjs.com/package/mermaid)
+- CDN: [https://www.jsdelivr.com/package/npm/mermaid](https://www.jsdelivr.com/package/npm/mermaid)
+- Discord: [https://discord.gg/AgrbSrBer3](https://discord.gg/AgrbSrBer3)
